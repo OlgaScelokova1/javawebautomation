@@ -16,6 +16,6 @@ Feature: This feature is about creating new account in the system
   Scenario: Unsuccessfull sing-up
     Given I have opened homepage
     When I select My account menu
-    And I select Sign up button
-    And I select Sign up button
+      And I select Sign up button
+      And I select Sign up button
     Then user account page is opened
