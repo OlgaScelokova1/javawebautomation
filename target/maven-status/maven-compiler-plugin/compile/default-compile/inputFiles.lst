@@ -1,3 +1,4 @@
+/home/olga/javaWebAutomation/src/main/java/pages/login/LoginPageObject.java
 /home/olga/javaWebAutomation/src/main/java/pages/signup/SignupPageObject.java
 /home/olga/javaWebAutomation/src/main/java/pages/header/NavigationPageObject.java
 /home/olga/javaWebAutomation/src/main/java/utils/RandomGenerator.java

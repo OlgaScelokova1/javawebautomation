@@ -1,26 +1,34 @@
 package stepdefinitions;
 
-import cucumber.api.PendingException;
+
 import cucumber.api.java.en.And;
 
+import pages.login.LoginPageObject;
+
+
 public class LoginSteps {
-    @And("^I select Login button$")
-    public void iSelectLoginButton() throws Throwable {
-        selectLoginButton();
-    }
+    LoginPageObject loginpage = new LoginPageObject();
+
+
 
     @And("^I enter login Email$")
     public void iEnterLoginEmail() throws Throwable {
-        enterLoginEmail();
+        loginpage.enterEmail(SignupSteps.user.getEmailAddress());
     }
 
     @And("^I enter login Password$")
     public void iEnterLoginPassword() throws Throwable {
-        enterLoginPassword();
+        loginpage.enterPassword(SignupSteps.user.getPassword());
     }
 
     @And("^I select Login form button$")
     public void iSelectLoginFormButton() throws Throwable {
-        selectLoginFormButton();
+       loginpage.selectLoginButton();
+    }
+
+    @And("^login page is opened$")
+    public void loginPageIsOpened() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("LOGIN PAGE OPENED");
     }
 }

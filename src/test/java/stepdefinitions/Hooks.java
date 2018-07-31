@@ -1,7 +1,9 @@
 package stepdefinitions;
 
+import com.codeborne.selenide.Configuration;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;

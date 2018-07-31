@@ -16,8 +16,8 @@ import static utils.RandomGenerator.generateRandomString;
 
 public class SignupSteps {
     private SignupPageObject signuppage = new SignupPageObject();
-    private User user = new User();
-    private User userTwo = new User("Janis", "Berzins");
+    static User user = new User();
+    public User userTwo = new User("Janis", "Berzins");
 
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
@@ -47,5 +47,9 @@ public class SignupSteps {
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
         signuppage.enterConfirmationPassword(user.getPassword());
+    }
+    @And("^I create account$")
+    public void iCreateAccount() throws Throwable {
+        signuppage.createAccount(user.getFirstName(), user.getLastName(), user.getMobileNumber(), user.getEmailAddress(), user.getPassword());
     }
 }

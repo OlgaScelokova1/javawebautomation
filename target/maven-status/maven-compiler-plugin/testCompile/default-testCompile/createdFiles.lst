@@ -2,4 +2,6 @@ general/User.class
 stepdefinitions/Hooks.class
 testrunner/TestRunner.class
 stepdefinitions/AccountSteps.class
+stepdefinitions/HomepageSteps.class
+stepdefinitions/LoginSteps.class
 stepdefinitions/SignupSteps.class

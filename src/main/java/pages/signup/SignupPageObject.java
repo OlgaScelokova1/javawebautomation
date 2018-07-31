@@ -55,5 +55,13 @@ public class SignupPageObject {
         getSignUpButton().click();
         return page(AccountPageObject.class);
     }
+    public void createAccount(String firstname, String lastname, String number, String email, String password){
+        enterFirstName(firstname);
+        enterLastName(lastname);
+        enterMobileNumber(number);
+        enterEmail(email);
+        enterPassword(password);
+        enterConfirmationPassword(password);
+    }
 
 }
