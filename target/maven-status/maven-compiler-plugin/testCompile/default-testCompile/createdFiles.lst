@@ -1,0 +1,5 @@
+general/User.class
+stepdefinitions/Hooks.class
+testrunner/TestRunner.class
+stepdefinitions/AccountSteps.class
+stepdefinitions/SignupSteps.class
